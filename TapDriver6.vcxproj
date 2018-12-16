@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Win8 Debug|Win32">
       <Configuration>Win8 Debug</Configuration>
@@ -70,66 +70,66 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'" Label="Configuration">
     <TargetVersion>Windows8</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'" Label="Configuration">
     <TargetVersion>Windows8</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'" Label="Configuration">
     <TargetVersion>Windows7</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'" Label="Configuration">
     <TargetVersion>Windows7</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'" Label="Configuration">
     <TargetVersion>Vista</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|Win32'" Label="Configuration">
     <TargetVersion>Vista</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
     <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
     <KMDF_VERSION_MINOR>7</KMDF_VERSION_MINOR>
-    <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|x64'" Label="Configuration">
     <TargetVersion>Windows8</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'" Label="Configuration">
     <TargetVersion>Windows8</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'" Label="Configuration">
     <TargetVersion>Windows7</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'" Label="Configuration">
     <TargetVersion>Windows7</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|x64'" Label="Configuration">
     <TargetVersion>Vista</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|x64'" Label="Configuration">
     <TargetVersion>Vista</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
     <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
     <KMDF_VERSION_MINOR>7</KMDF_VERSION_MINOR>
-    <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+    <PlatformToolset>WindowsKernelModeDriver8.1</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -139,43 +139,47 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup>
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
+    <OutDir>$(SolutionDir)$(Platform)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(Platform)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
+    <DiagnosticMode>true</DiagnosticMode>
+    <Inf2CatWindowsVersionList>7_$(DDKPlatform)</Inf2CatWindowsVersionList>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">
-    <TargetName>zttap300</TargetName>
+    <TargetName>enclavetap6</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -276,7 +280,7 @@
       <SpecifyDriverVerDirectiveDate Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">true</SpecifyDriverVerDirectiveDate>
       <VersionHeaderPath Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">
       </VersionHeaderPath>
-      <CatalogFileName Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">zttap300.cat</CatalogFileName>
+      <CatalogFileName Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">enclavetap6.cat</CatalogFileName>
     </Inf>
     <Inf>
       <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
@@ -311,20 +315,23 @@
       <SpecifyDriverVerDirectiveDate Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">true</SpecifyDriverVerDirectiveDate>
       <VersionHeaderPath Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">
       </VersionHeaderPath>
-      <CatalogFileName Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">zttap300.cat</CatalogFileName>
+      <CatalogFileName Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">enclavetap6.cat</CatalogFileName>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">-v "3.00.00.0" %(AdditionalOptions)</AdditionalOptions>
     </Inf>
     <Inf>
-      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">3.00.00.0</TimeStamp>
       <SpecifyDriverVerDirectiveVersion Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">true</SpecifyDriverVerDirectiveVersion>
       <SpecifyDriverVerDirectiveDate Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">true</SpecifyDriverVerDirectiveDate>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">-v "3.00.00.0" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">-v "1.0.1 6/0" %(AdditionalOptions)</AdditionalOptions>
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">$(PRODUCT_VERSION)</TimeStamp>
     </Inf>
     <Inf>
       <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">3.00.00.0</TimeStamp>
       <SpecifyDriverVerDirectiveVersion Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">false</SpecifyDriverVerDirectiveVersion>
       <SpecifyDriverVerDirectiveDate Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">false</SpecifyDriverVerDirectiveDate>
     </Inf>
+    <DriverSign>
+      <FileDigestAlgorithm Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">sha1</FileDigestAlgorithm>
+    </DriverSign>
   </ItemDefinitionGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />
@@ -343,7 +350,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h" />
-    <ClInclude Include="config.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="device.h" />
     <ClInclude Include="endian.h" />
@@ -363,7 +369,7 @@
     <ResourceCompile Include="resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="zttap300.inf">
+    <Inf Include="enclavetap6.inf">
       <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">3.00.00.0</TimeStamp>
       <SpecifyDriverVerDirectiveVersion Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'">false</SpecifyDriverVerDirectiveVersion>
       <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'">3.00.00.0</TimeStamp>

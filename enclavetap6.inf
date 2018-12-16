@@ -1,11 +1,11 @@
 ;
-; ZeroTier One Virtual Network Port NDIS6 Driver
+; Enclave Virtual Network Port NDIS6 Driver
 ;
-; Based on the OpenVPN tap-windows6 driver version 9.21.1 git
-; commit 48f027cfca52b16b5fd23d82e6016ed8a91fc4d3.
-; See: https://github.com/OpenVPN/tap-windows6
+; Based on the ZeroTier tap driver
+; commit 8cced06a2dff66300a46e2962cd462f58096b15c
+; See: https://github.com/zerotier/ZeroTierOne/
 ;
-; Modified by ZeroTier, Inc. - https://www.zerotier.com/
+; Modified by Westgate Cyber Security Ltd. - https://www.westgatecyber.com/
 ;
 ; (1) Comment out 'tun' functionality and related features such as DHCP
 ;     emulation, since we don't use any of that. Just want straight 'tap'.
@@ -26,27 +26,30 @@
 
 [Version]
 Signature = "$Windows NT$"
-CatalogFile = zttap300.cat
+CatalogFile = enclavetap6.cat
 ClassGUID = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider = %Provider%
 Class = Net
-DriverVer=04/25/2015,3.00.00.0
+
+; This version number should match the version
+; number given in SOURCES.
+DriverVer=*
 
 [Strings]
-DeviceDescription = "ZeroTier One Virtual Port"
-Provider = "ZeroTier Networks LLC" ; We're ZeroTier, Inc. now but kernel mode certs are $300+ so fuqdat.
+DeviceDescription = "Enclave Virtual Network Port"
+Provider = "Westgate Cyber Security Limited"
 
 ; To build for x86, take NTamd64 off this and off the named section manually, build, then put it back!
 [Manufacturer]
-%Provider%=zttap300,NTamd64
+%Provider%=enclavetap6,NTamd64
 
-[zttap300]
-%DeviceDescription% = zttap300.ndi, root\zttap300 ; Root enumerated
-%DeviceDescription% = zttap300.ndi, zttap300      ; Legacy
+[enclavetap6]
+%DeviceDescription% = enclavetap6.ndi, root\enclavetap6 ; Root enumerated
+%DeviceDescription% = enclavetap6.ndi, enclavetap6      ; Legacy
 
-[zttap300.NTamd64]
-%DeviceDescription% = zttap300.ndi, root\zttap300 ; Root enumerated
-%DeviceDescription% = zttap300.ndi, zttap300      ; Legacy
+[enclavetap6.NTamd64]
+%DeviceDescription% = enclavetap6.ndi, root\enclavetap6 ; Root enumerated
+%DeviceDescription% = enclavetap6.ndi, enclavetap6      ; Legacy
 
 ;----------------- Characteristics ------------
 ;    NCF_PHYSICAL = 0x04
@@ -56,26 +59,26 @@ Provider = "ZeroTier Networks LLC" ; We're ZeroTier, Inc. now but kernel mode ce
 ;    NCF_NO_SERVICE = 0x10
 ;    NCF_HAS_UI = 0x80
 ;----------------- Characteristics ------------
-[zttap300.ndi]
-CopyFiles       = zttap300.driver, zttap300.files
-AddReg          = zttap300.reg
-AddReg          = zttap300.params.reg
+[enclavetap6.ndi]
+CopyFiles       = enclavetap6.driver, enclavetap6.files
+AddReg          = enclavetap6.reg
+AddReg          = enclavetap6.params.reg
 Characteristics = 0x81
 *IfType            = 0x6 ; IF_TYPE_ETHERNET_CSMACD
 *MediaType         = 0x0 ; NdisMedium802_3
 *PhysicalMediaType = 14  ; NdisPhysicalMedium802_3
 
-[zttap300.ndi.Services]
-AddService = zttap300,        2, zttap300.service
+[enclavetap6.ndi.Services]
+AddService = enclavetap6,        2, enclavetap6.service
 
-[zttap300.reg]
-HKR, Ndi,            Service,      0, "zttap300"
-HKR, Ndi\Interfaces, UpperRange,   0, "ndis5" ; yes, 'ndis5' is correct... yup, Windows.
+[enclavetap6.reg]
+HKR, Ndi,            Service,      0, "enclavetap6"
+HKR, Ndi\Interfaces, UpperRange,   0, "ndis5" ; ndis5 is correct (see https://docs.microsoft.com/en-gb/windows-hardware/drivers/network/specifying-binding-interfaces)
 HKR, Ndi\Interfaces, LowerRange,   0, "ethernet"
 HKR, ,               Manufacturer, 0, "%Provider%"
 HKR, ,               ProductName,  0, "%DeviceDescription%"
 
-[zttap300.params.reg]
+[enclavetap6.params.reg]
 HKR, Ndi\params\MTU,                  ParamDesc, 0, "MTU"
 HKR, Ndi\params\MTU,                  Type,      0, "int"
 HKR, Ndi\params\MTU,                  Default,   0, "2800"
@@ -112,13 +115,13 @@ HKR, Ndi\params\AllowNonAdmin\enum,   "1",       0, "Allowed"
 ;    SERVICE_DISABLED     = 0x4
 ;---------- Start Mode ---------------
 
-[zttap300.service]
+[enclavetap6.service]
 DisplayName = %DeviceDescription%
 ServiceType = 1
 StartType = 3
 ErrorControl = 1
 LoadOrderGroup = NDIS
-ServiceBinary = %12%\zttap300.sys
+ServiceBinary = %12%\enclavetap6.sys
 
 ;----------------- Copy Flags ------------
 ;    COPYFLG_NOSKIP = 0x02
@@ -126,18 +129,18 @@ ServiceBinary = %12%\zttap300.sys
 ;----------------- Copy Flags ------------
 
 [SourceDisksNames]
-1 = %DeviceDescription%, zttap300.sys
+1 = %DeviceDescription%, enclavetap6.sys
 
 [SourceDisksFiles]
-zttap300.sys = 1
+enclavetap6.sys = 1
 
 [DestinationDirs]
-zttap300.files  = 11
-zttap300.driver = 12
+enclavetap6.files  = 11
+enclavetap6.driver = 12
 
-[zttap300.files]
+[enclavetap6.files]
 ;
 
-[zttap300.driver]
-zttap300.sys,,,6     ; COPYFLG_NOSKIP | COPYFLG_NOVERSIONCHECK
+[enclavetap6.driver]
+enclavetap6.sys,,,6     ; COPYFLG_NOSKIP | COPYFLG_NOVERSIONCHECK
 

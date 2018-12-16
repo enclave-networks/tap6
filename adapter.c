@@ -272,8 +272,9 @@ tapReadConfiguration(
 
         if (status == NDIS_STATUS_SUCCESS)
         {
-            if (configParameter->ParameterType == NdisParameterString)
-            {
+			// roll in buffer overflow fix https://github.com/OpenVPN/tap-windows6/commit/6b05a00fb85903f0d26cb3a21bb70b1f814003d5#diff-043ce3ca6350feed57b6c81d93d1f3f6
+			if ((configParameter->ParameterType == NdisParameterString) && (configParameter->ParameterData.StringData.Length >= 12))
+			{
                 DEBUGP (("[TAP] NdisReadConfiguration (NetCfgInstanceId=%wZ)\n",
                     &configParameter->ParameterData.StringData ));
 

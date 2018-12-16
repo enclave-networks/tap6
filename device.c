@@ -434,8 +434,7 @@ Return Value:
         }
         break;
 
-			// Allow ZeroTier One to get multicast memberships at the L2 level in a
-			// protocol-neutral manner.
+			// Get multicast memberships at the L2 level in a protocol-neutral manner.
 			case TAP_WIN_IOCTL_GET_MULTICAST_MEMBERSHIPS:
 				{
 					if (outBufLength < TAP_WIN_IOCTL_GET_MULTICAST_MEMBERSHIPS_OUTPUT_BUF_SIZE) {

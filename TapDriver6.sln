@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TapDriver6", "TapDriver6.vcxproj", "{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Vista Debug|x64 = Vista Debug|x64
+		Vista Debug|x86 = Vista Debug|x86
+		Vista Release|x64 = Vista Release|x64
+		Vista Release|x86 = Vista Release|x86
+		Win7 Debug|x64 = Win7 Debug|x64
+		Win7 Debug|x86 = Win7 Debug|x86
+		Win7 Release|x64 = Win7 Release|x64
+		Win7 Release|x86 = Win7 Release|x86
+		Win8 Debug|x64 = Win8 Debug|x64
+		Win8 Debug|x86 = Win8 Debug|x86
+		Win8 Release|x64 = Win8 Release|x64
+		Win8 Release|x86 = Win8 Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x64.ActiveCfg = Vista Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x64.Build.0 = Vista Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x64.Deploy.0 = Vista Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x86.ActiveCfg = Vista Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x86.Build.0 = Vista Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Debug|x86.Deploy.0 = Vista Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x64.ActiveCfg = Vista Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x64.Build.0 = Vista Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x64.Deploy.0 = Vista Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x86.ActiveCfg = Vista Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x86.Build.0 = Vista Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Vista Release|x86.Deploy.0 = Vista Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x64.ActiveCfg = Win7 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x64.Build.0 = Win7 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x64.Deploy.0 = Win7 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x86.ActiveCfg = Win7 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x86.Build.0 = Win7 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Debug|x86.Deploy.0 = Win7 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x64.ActiveCfg = Win7 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x64.Build.0 = Win7 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x64.Deploy.0 = Win7 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x86.ActiveCfg = Win7 Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x86.Build.0 = Win7 Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win7 Release|x86.Deploy.0 = Win7 Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x64.ActiveCfg = Win8 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x64.Build.0 = Win8 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x64.Deploy.0 = Win8 Debug|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x86.ActiveCfg = Win8 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x86.Build.0 = Win8 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Debug|x86.Deploy.0 = Win8 Debug|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x64.ActiveCfg = Win8 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x64.Build.0 = Win8 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x64.Deploy.0 = Win8 Release|x64
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x86.ActiveCfg = Win8 Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x86.Build.0 = Win8 Release|Win32
+		{43BA7584-D4DB-4F7C-90FC-E2B18A68A213}.Win8 Release|x86.Deploy.0 = Win8 Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

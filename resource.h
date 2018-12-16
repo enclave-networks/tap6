@@ -38,7 +38,6 @@
 #define __drv_typeConst                 0
 #define VER_DEBUG                       0
 #define VER_PRERELEASE                  0
-#define PRODUCT_TAP_WIN_MINOR           0
 #define WINAPI_PARTITION_DESKTOP        0x00000001
 #define CREATEPROCESS_MANIFEST_RESOURCE_ID 1
 #define MINIMUM_RESERVED_MANIFEST_RESOURCE_ID 1
@@ -346,7 +345,6 @@
 #define SUBLANG_SPANISH_MODERN          0x03
 #define SORT_CHINESE_BOPOMOFO           0x3
 #define __drv_typeExpr                  3
-#define PRODUCT_TAP_WIN_MAJOR           3
 #define SW_SHOWNOACTIVATE               4
 #define SHOW_OPENNOACTIVATE             4
 #define SW_OTHERUNZOOM                  4
@@ -1395,7 +1393,7 @@
 #define MULTIFILEOPENORD                1537
 #define _WIN32_WINNT_WIN8               0x0602
 #define _WIN32_IE_WS03                  0x0602
-#define _WIN32_WINNT                    0x0600
+//#define _WIN32_WINNT                    0x0600 // commented to remove compiler warning about duplication
 #define PRINTDLGORD                     1538
 #define VER_PRODUCTVERSION_W            0x0602
 #define _WIN32_IE_IE60SP2               0x0603

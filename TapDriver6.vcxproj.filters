@@ -51,9 +51,6 @@
     <ClInclude Include="adapter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -103,7 +100,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="zttap300.inf">
+    <Inf Include="enclavetap6.inf">
       <Filter>Driver Files</Filter>
     </Inf>
   </ItemGroup>

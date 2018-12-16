@@ -36,7 +36,6 @@
 #include <ntstrsafe.h>
 #include <netioapi.h>
 
-#include "config.h"
 #include "lock.h"
 #include "constants.h"
 #include "proto.h"
